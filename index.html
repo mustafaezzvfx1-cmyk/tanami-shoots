@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; manifest-src 'self'; connect-src 'self'; worker-src 'self'; frame-src https://script.google.com https://*.googleusercontent.com; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B1A42">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tanami Shoots">
+<title>Tanami – Book a Shoot</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="splash" aria-hidden="true"><img src="icons/t-mark.png" alt=""><p>Tanami Media</p><span class="bar"><i></i></span></div>
+
+<iframe id="booking" title="Book a shoot with the Tanami media team"
+  data-src="https://script.google.com/macros/s/AKfycbxeGxbKr9BYnmuT2nRxgYVL20162Yis8-Ce7G6vIfiorzT-6GxpzDywGxXbw0xeX6Q4/exec"
+  referrerpolicy="no-referrer" allow="clipboard-write"
+  sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+<div id="offline" hidden><img src="icons/t-mark.png" alt=""><h1>You're offline</h1><p>Connect to the internet to book a shoot.</p><button type="button" id="retry">Try again</button></div>
+
+<div id="install" hidden role="dialog" aria-labelledby="install-t">
+  <img src="icons/apple-touch-icon.png" alt="">
+  <div class="txt"><b id="install-t">Install the Tanami app</b>
+    <span id="install-ios" hidden>Tap <svg viewBox="0 0 20 20" aria-label="Share"><path d="M10 2v11M6 6l4-4 4 4M4 10v7h12v-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> then <b>Add to Home Screen</b></span>
+    <span id="install-and" hidden>Book shoots in one tap from your home screen</span>
+  </div>
+  <button type="button" id="install-go" hidden>Install</button>
+  <button type="button" id="install-x" aria-label="Close">×</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
